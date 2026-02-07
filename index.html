@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>プロジェクト管理</title>
+        <link rel="stylesheet" href="src/style.css">
+        <script type="module" src="src/main.ts"></script>
+    </head>
+    <body>
+        <header><h1>プロジェクト管理フロントエンド</h1></header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>新規プロジェクトの登録</legend>
+                    <div>
+                        <label for="project-name">プロジェクト名</label>
+                        <input type="text" id="project-name" name="project-name">
+                    </div>
+                    <div>
+                        <label for="project-description">詳細</label>
+                        <input type="text" id="project-description" name="project-description">
+                    </div>
+                    <div>
+                        <button type="submit" id="add-button">追加</button>
+                    </div>
+                </fieldset>
+                <!--完了にはチェックボックス、削除には削除ボタンを入れたいね-->
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>プロジェクト名</th>
+                        <th>詳細</th>
+                        <th>完了</th>
+                        <th>削除</th>
+                    </tr>
+                </thead>
+                <tbody id="project-tbody"></tbody>
+            </table>
+        </main>
+    </body>
+</html>

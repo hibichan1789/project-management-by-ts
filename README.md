@@ -1,8 +1,7 @@
 # 純粋なHTML,CSS,TSを用いたタスク管理ツール  
 
 ## 修正点、変更点  
-最初のフォルダ構成の作成  
-index.html の概形の作成  
+index.html のフォーム、テーブルの作成
 
 ## 学んだこと  
 npm init -yこれでpackage.jsonがインストール  
