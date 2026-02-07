@@ -14,12 +14,14 @@ function addProject(projectName:string, projectDescription:string, projectList:P
 function createCheckbox():HTMLInputElement{
     const checkbox = document.createElement("input")
     checkbox.type = "checkbox";
+    checkbox.classList.add("checkbox");
     return checkbox;
 }
 function createButton(buttonValue:string):HTMLButtonElement{
     const button = document.createElement("button");
     button.textContent = buttonValue;
     button.type = "button";
+    button.classList.add("button");
     return button;
 }
 function renderTable(projectList:Project[], tbody:HTMLTableElement):void{
