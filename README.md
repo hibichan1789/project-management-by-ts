@@ -1,7 +1,7 @@
 # 純粋なHTML,CSS,TSを用いたタスク管理ツール  
 
 ## 修正点、変更点  
-index.html のフォーム、テーブルの作成
+type.tsでフォームで送られる型を定義した  
 
 ## 学んだこと  
 npm init -yこれでpackage.jsonがインストール  
