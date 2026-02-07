@@ -1,19 +1,12 @@
 import type {Project} from "./types";
-
+import {formValidate, generateProject} from "./utils";
 const addButton = document.querySelector("#add-button") as HTMLButtonElement;
 const inputName = document.querySelector("#project-name") as HTMLInputElement;
 const inputDescription = document.querySelector("#project-description") as HTMLInputElement;
 const tbody = document.querySelector("#project-tbody") as HTMLTableElement;
 const projectList:Project[] = [];//プロジェクトが保存されるリスト
-function formValidate(projectName:string, projectDescription:string):boolean{
-    if(projectName.trim() !== "" && projectDescription.trim() !== ""){
-        return true;
-    }
-    return false;
-}
-function generateProject(projectName:string, projectDescription:string):Project{
-    return {id:crypto.randomUUID(), name:projectName, description:projectDescription, isCompleted:false};
-}
+
+
 function addProject(projectName:string, projectDescription:string, projectList:Project[]):void{
     const newProject:Project = generateProject(projectName, projectDescription);
     projectList.push(newProject);
